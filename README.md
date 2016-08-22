@@ -12,6 +12,7 @@ There are three route types available;
 
 # Example
 include 'Routing.php';
+
 $route = new Routing();
 
 $route->get('test',funtion(){
