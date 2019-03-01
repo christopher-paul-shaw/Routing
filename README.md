@@ -1,8 +1,9 @@
 # Routing
-Simple PHP Routing Class
+A PHP Router for handling logic base upon parameters passed to the code.
 
 # Initiating
-$route = new Routing();
+
+    $route = new Routing();
 
 # Usage
 There are three route types available;
@@ -11,15 +12,16 @@ There are three route types available;
 - hoome : Is the default and catch all, should be used last.
 
 # Example
-include 'Routing.php';
 
-$route = new Routing();
+    <?php
+    include 'Routing.php';
 
-$route->get('test',funtion(){
+    $route = new Routing();
+
+    $route->get('test',funtion(){
 	die('Content for ?test here');
-});
+    });
 
-$route->home(function() {
+    $route->home(function() {
 	die('The default route');
-});
-
+    });
